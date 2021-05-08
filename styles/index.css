@@ -61,23 +61,18 @@
 /* Pagina principal */
 .main__contenedor {
   color: azure;
-  display: flex;
 }
 .contenedor {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .inicio {
   background-color: darkgoldenrod;
-  width: 460px;
-  height: 600px;
 }
 .sobre-mi {
   background-color: rgba(231, 190, 113, 0.726);
-  width: 460px;
-  height: 600px;
 }
 .sobre-mi:hover,
 .proyectos1:hover,
@@ -86,25 +81,27 @@
 .home:hover {
   background-color: black;
 }
+.inicio,
+.sobre-mi,
+.proyectos1,
+.galerias1,
+.contactos1,
+.home {
+  width: 410px;
+  height: 600px;
+}
+
 .proyectos1 {
   background-color: red;
-  width: 460px;
-  height: 600px;
 }
 .galerias1 {
   background-color: green;
-  width: 460px;
-  height: 600px;
 }
 .contactos1 {
   background-color: rgba(81, 30, 117, 0.596);
-  width: 460px;
-  height: 600px;
 }
 .home {
   background-color: violet;
-  width: 460px;
-  height: 600px;
 }
 .inicio__titulo {
   padding-top: 200px;
@@ -149,19 +146,19 @@
     rotateY(0deg) rotateZ(0deg) skew(10deg, 10deg);
   transform-style: preserve-3d;
 }
-.imagen4:hover {
+.imagen-4:hover {
   opacity: 1;
   transform: translate3d(40px, -40px, 0px) scale3d(0.6, 0.3, 0.8) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
-.imagen5:hover {
+.imagen-5:hover {
   opacity: 0.7;
   transform: translate3d(0px, 0px, 0px) scale3d(0.85, 0.85, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
-.imagen6:hover {
+.imagen-6:hover {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 0.3) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -170,7 +167,7 @@
 
 /* Pagina de sobre-mi */
 .acercademi {
-  height: 100vh;
+  /* height: 100vh; */
   color: black;
   text-align: center;
   margin-bottom: 2em;
