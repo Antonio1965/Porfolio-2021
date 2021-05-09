@@ -25,7 +25,9 @@
 }
 
 .logo {
+  background-color: rgba(0, 0, 0, 0.473);
   padding: 5px;
+  margin-top: 5px;
   padding-left: 5px;
   max-width: 100px;
   border-radius: 10px 30px / 30px 40px;
@@ -69,12 +71,13 @@
   justify-content: center;
 }
 .inicio {
-  background-color: darkgoldenrod;
+  background-color: rgb(243, 164, 164);
 }
 .sobre-mi {
   background-color: rgba(231, 190, 113, 0.726);
 }
 .sobre-mi:hover,
+.inicio:hover,
 .proyectos1:hover,
 .galerias1:hover,
 .contactos1:hover,
@@ -95,7 +98,7 @@
   background-color: red;
 }
 .galerias1 {
-  background-color: green;
+  background-color: rgba(16, 194, 149, 0.616);
 }
 .contactos1 {
   background-color: rgba(81, 30, 117, 0.596);
@@ -142,7 +145,7 @@
 }
 .imagen-3:hover {
   opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.85, 0.85, 1) rotateX(0deg)
+  transform: translate3d(0px, 0px, 0px) scale3d(0.5, 0.5, 0.5) rotateX(180deg)
     rotateY(0deg) rotateZ(0deg) skew(10deg, 10deg);
   transform-style: preserve-3d;
 }
