@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="favicons/manifest.json">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -17,24 +18,26 @@
 </head>
 
 <body class="body">
-    <!-- Cabecera de la pagina  -->
-    <div class="conteiner">
-        <div class="conteiner__logo">
 
+    <!-- Cabecera de la pagina  -->
+
+    <nav class="nav__conteiner">
+        <div class="nav__conteiner__logo">
             <a class="item__inicio" href="index.html"><img class="logo" src="./img/antonio.jpg" alt="Logo"></a>
         </div>
-        <h1 class="titulo1"> Portfolio de TSUTSUMI, José Antonio</h1>
-        <div class="list">
-            <!-- <li class="list__item"><a class="item__inicio" href="#">Inicio</a></li> -->
-            <li class="list__item"><a class="item__acerca" href="./sobre-mi.html">SOBRE-MI</a></li>
-            <li class="list__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
-            <li class="list__item"><a class="item__galeria" href="./galerias.html"">GALERIAS</a></li>
-            <li class=" list__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
+        <h1 class="title1"> Portfolio de TSUTSUMI, José Antonio</h1>
+        <div class="navbar">
+            <li class="navbar__item"><a class="item__acerca" href="./sobre-mi.html">SOBRE-MI</a></li>
+            <li class="navbar__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
+            <li class="navbar__item"><a class="item__galeria" href="./galerias.html"">GALERIAS</a></li>
+            <li class=" navbar__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
         </div>
-    </div>
-    <div class="contactos">
+    </nav>
+    <section class="contactos">
         <h2 class="contactos__titulo">Contactos:</h2>
+
         <!-- formulario  -->
+
         <form class="contactos__formulario" action="#">
             <fieldset class="contactos__control">
                 <legend class="contactos__leyenda">Información Personal</legend>
@@ -85,10 +88,12 @@
         </form>
         <br>
         <a class="enlace" href="index.html">Volver a Inicio</a>
-    </div>
+    </section>>
 
     <body>
+
         <!-- Pie de la pagina  -->
+
         <footer class="footer">
             <div class="footer__conteiner">
                 <!-- Redes sociales. -->
@@ -106,7 +111,6 @@
             <hr />
             <p class="footer__text">Todos los derechos reservados - Tsutsumi Jose Antonio- Abril de 2021.</p>
         </footer>
-
     </body>
 
 </html>

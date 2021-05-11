@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- favicons -->
     <link rel="manifest" href="favicons/manifest.json">
 
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -19,88 +17,108 @@
 </head>
 
 <body>
-    <!-- Cabecera de la pagina  -->
-    <div class="conteiner">
-        <div class="conteiner__logo">
 
+    <!-- Cabecera de la pagina  -->
+
+    <nav class="nav__conteiner">
+        <div class="nav__conteiner__logo">
             <a class="item__inicio" href="./index.html"><img class="logo" src="./img/antonio.jpg" alt="Logo"></a>
         </div>
-        <h1 class="titulo1"> Portfolio de TSUTSUMI, José Antonio</h1>
-        <div class="list">
-            <!-- <li class="list__item"><a class="item__inicio" href="#">Inicio</a></li> -->
-            <li class="list__item"><a class="item__acerca" href="./sobre-mi.html">SOBRE-MI</a></li>
-            <li class="list__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
-            <li class="list__item"><a class="item__galeria" href="./galerias.html">GALERIAS</a></li>
-            <li class="list__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
+        <h1 class="title1"> Portfolio de TSUTSUMI, José Antonio</h1>
+        <div class="navbar">
+            <li class="navbar__item"><a class="item__acerca" href="./sobre-mi.html">SOBRE-MI</a></li>
+            <li class="navbar__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
+            <li class="navbar__item"><a class="item__galeria" href="./galerias.html">GALERIAS</a></li>
+            <li class="navbar__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
         </div>
-    </div>
+    </nav>
+
     <!-- Pagina de proyectos -->
-    <div class="proyectos">
-        <h2 class="proyectos__titulo">Proyectos Realizados</h2>
-        <br>
-        <table class="tablas">
-            <tbody>
-                <tr>
-                    <th>Proyecto 1</th>
-                    <th>Proyecto 2</th>
-                    <th>Proyecto 3</th>
-                    <th>Proyecto 4</th>
-                </tr>
-                <tr>
-                    <td class="tablas__celdas"><iframe class="tablas__video1"
-                            src="https://www.youtube.com/embed/pd7JGO2A3so"></iframe></td>
-                    <td class="tablas__celdas"><iframe class="tablas__video1"
-                            src="https://www.youtube.com/embed/ll6xSsbPg3k"></iframe></td>
-                    <td class="tablas__celdas"><img class="tablas__imagen1" src="img/buque3.jpg"
-                            style="max-width: 260px" alt="buque3"></td>
-                    <td class="tablas__celdas"><img class="tablas__imagen2" src="img/imagen4.jpg"
-                            style="max-width: 220px" alt="imagen4">
-                    </td>
-                </tr>
 
+    <section class="proyectos__contenedor">
+        <div class="proyectos1">
+            <h3 class="proyectos1__titulo">Proyecto 1</h3>
+            <iframe class="video1" src="https://www.youtube.com/embed/pd7JGO2A3so"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h4 class="proyectos1__descr">Descripcion del proyecto.</h4>
+            <p class="proyectos1__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                voluptatibus, eligendi amet quod,
+                officiis saepe repudiandae non assumenda labore officia repellat animi? Blanditiis dolorem eveniet
+                asperiores facere illum distinctio atque ipsum, quidem iste. At voluptate assumenda labore earum minus
+                maiores!
+            </p>
+        </div>
+        <div class="proyectos2">
+            <h3 class="proyectos2__titulo">Proyecto 2</h3>
+            <iframe class="video2" src="https://www.youtube.com/embed/ll6xSsbPg3k"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <h4 class="proyectos2__descr">Descripcion del proyecto.</h4>
+            <p class="proyectos2__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                voluptatibus, eligendi amet quod,
+                officiis saepe repudiandae non assumenda labore officia repellat animi? Blanditiis dolorem eveniet
+                asperiores facere illum distinctio atque ipsum, quidem iste. At voluptate assumenda labore earum minus
+                maiores!
+            </p>
+        </div>
+        <div class="proyectos3">
+            <h3 class="proyectos3__titulo">Proyecto 3</h3>
+            <img class="imagen1" src="img/buque3.jpg" style="max-width: 610px" alt="buque3">
+            <h4 class="proyectos3__descr">Descripcion del proyecto.</h4>
+            <p class="proyectos3__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                voluptatibus, eligendi amet quod,
+                officiis saepe repudiandae non assumenda labore officia repellat animi? Blanditiis dolorem eveniet
+                asperiores facere illum distinctio atque ipsum, quidem iste. At voluptate assumenda labore earum minus
+                maiores!
+            </p>
+        </div>
+        <div class="proyectos4">
+            <h3 class="proyectos4__titulo">Proyecto 4</h3>
+            <img class="imagen2" src="img/imagen4.jpg" style="max-width: 610px" alt="imagen4">
+            <h4 class="proyectos4__descr">Descripcion del proyecto.</h4>
+            <p class="proyectos4__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                voluptatibus, eligendi amet quod,
+                officiis saepe repudiandae non assumenda labore officia repellat animi? Blanditiis dolorem eveniet
+                asperiores facere illum distinctio atque ipsum, quidem iste. At voluptate assumenda labore earum minus
+                maiores!
+            </p>
+        </div>
+        <div class="proyectos5">
+            <h3 class="proyectos5__titulo">Proyecto 5</h3>
+            <img class="imagen3" src="./img/imagen5.jpg" style="max-width: 610px" alt="imagen5">
+            <h4 class="proyectos5__descr">Descripcion del proyecto.</h4>
+            <p class="proyectos5__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                voluptatibus, eligendi amet quod,
+                officiis saepe repudiandae non assumenda labore officia repellat animi? Blanditiis dolorem eveniet
+                asperiores facere illum distinctio atque ipsum, quidem iste. At voluptate assumenda labore earum minus
+                maiores!
+            </p>
+        </div>
+        <div class="proyectos6">
+            <h3 class="proyectos6__titulo">Proyecto 6</h3>
+            <img class="imagen4" src="./img/imagen2.jpg" style="max-width: 610px" alt="imagen2">
+            <h4 class="proyectos6__descr">Descripcion del proyecto.</h4>
+            <p class="proyectos6__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                voluptatibus, eligendi amet quod,
+                officiis saepe repudiandae non assumenda labore officia repellat animi? Blanditiis dolorem eveniet
+                asperiores facere illum distinctio atque ipsum, quidem iste. At voluptate assumenda labore earum minus
+                maiores!
+            </p>
+        </div>
+    </section>
+    <h2 class="proyecto-a-ejecutar">Proyectos a ejecutar...</h2>
+    <br>
+    <a class="enlace" href="index.html">Volver a Inicio</a>
+    <br>
 
-                <tr>
-                    <td class="tablas__celdas">Descripcion del proyecto: HTML-CSS</td>
-                    <td class="tablas__celdas">Descripcion del proyecto: React-JS</td>
-                    <td class="tablas__celdas">Descripcion del proyecto:</td>
-                    <td class="tablas__celdas">Descripcion del proyecto:</td>
-                </tr>
-                <tr>
-                    <td class="tablas__celdas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum
-                        asperiores voluptatibus
-                        omnis
-                        praesentium id ad voluptate excepturi alias unde?</td>
-                    <td class="tablas__celdas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cum quidem
-                        asperiores! Tenetur
-                        perferendis dicta unde libero nulla ipsam exercitationem cumque dolorem necessitatibus quo
-                        tempora,
-                        est, quae, dolore fuga. Similique!</td>
-                    <td class="tablas__celdas">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
-                        reiciendis labore? Hic et
-                        deleniti
-                        tenetur, omnis quisquam blanditiis repudiandae, perspiciatis ipsam distinctio repellendus</td>
-                    <td class="tablas__celdas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minima
-                        dignissimos, inventore,
-                        possimus ut autem aut obcaecati enim modi culpa molestiae animi sequi maxime omnis a quo! Sit,
-                        nobis quod.
-
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <br>
-        <h2>Proyectos a ejecutar...</h2>
-        <br>
-        <br>
-        <a class="enlace" href="index.html">Volver a Inicio</a>
-        <br>
-        <br>
-    </div>
     <!-- Pie de la pagina  -->
+
     <footer class="footer">
         <div class="footer__conteiner">
+
             <!-- Redes sociales. -->
+
             <h2 class="redes_sociales">Redes Sociales</h2>
             <ul class="footer__lista">
                 <li class="footer__item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
@@ -114,7 +132,6 @@
         <hr />
         <p class="footer__text">Todos los derechos reservados - Tsutsumi Jose Antonio- Abril de 2021.</p>
     </footer>
-
 </body>
 
 </html>
