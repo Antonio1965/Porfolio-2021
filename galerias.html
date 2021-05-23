@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/galerias.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="favicons/manifest.json">
@@ -13,32 +13,39 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script defer src="index.js"></script>
     <title>Galerias de fotos-videos-audios</title>
 </head>
 
 <body class="body">
 
-    <!-- Cabecera de la pagina  -->
+    <!-- cabecera de la página -->
 
-    <nav class="nav__conteiner">
-        <div class="nav__conteiner__logo">
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="logo"> <img src="./img/antonio.jpg" class="nav-logo" alt=""></a>
+            <h1 class="nav-title">Tsutsumi, José Antonio.</h1>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu__visible">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./sobre-mi.html">Sobre-mi</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./galerias.html">Galerias</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link " href="./contactos.html">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <a class="item__inicio" href="./index.html"><img class="logo" src="./img/antonio.jpg" alt="Logo"></a>
-        </div>
-        <h1 class="title1"> Portfolio de TSUTSUMI, José Antonio</h1>
-        <div class="navbar">
-            <li class="navbar__item"><a class="item__acerca" href="./sobre-mi.html">SOBRE-MI</a></li>
-            <li class="navbar__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
-            <li class="navbar__item"><a class="item__galeria" href="./galerias.html">GALERIAS</a></li>
-            <li class="navbar__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
-        </div>
-    </nav>
+    <!-- Pagina principal de galerias.html -->
 
-    <!-- Galerias de fotos. -->
-
-    <section class="galerias__contenedor">
+    <main class="galerias__contenedor">
         <h2 class="galerias__titulo">Galerias de Fotos-Videos-Audios</h2>
-        <div class="galerias__fotos-video-audio">
+
+        <div class="video__contenedor">
             <div class="video__uno">
                 <h3 class="galerias__subtitulo">Video 1</h3>
                 <iframe class="galerias__video" src="https://www.youtube.com/embed/pd7JGO2A3so"
@@ -51,6 +58,8 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+        </div>
+        <div class="imagen__contenedor">
             <div class="imagen__uno">
                 <h3 class="galerias__subtitulo">Imagen 1</h3>
                 <img class="galerias__imagen" src="./img/imagen1.jpg" class="img-responsive" style="width:100%"
@@ -101,32 +110,42 @@
                 <img class="galerias__imagen" src="./img/cometa.webp" class="img-responsive" style="width:100%"
                     alt="buque5">
             </div>
+            <div class="imagen__once">
+                <h3 class="galerias__subtitulo">Imagen 11</h3>
+                <img class="galerias__imagen" src="./img/agenda.jpg" class="img-responsive" style="width:100%"
+                    alt="imagen">
+            </div>
+            <div class="imagen__doce">
+                <h3 class="galerias__subtitulo">Imagen 12</h3>
+                <img class="galerias__imagen" src="./img/mundo2.webp" class="img-responsive" style="width:100%"
+                    alt="mundo">
+            </div>
         </div>
+        <div class="volver">
+            <a class="enlace" href="index.html">Volver a Inicio</a>
+        </div>
+    </main>
+    <hr>
 
-    </section>
-    <br>
-    <a class="enlace" href="index.html">Volver a Inicio</a>
-    </div>
 
-    <!-- footer-pie de pagina  -->
+    <!-- Footer, pie de página -->
 
     <footer class="footer">
-        <div class="footer__conteiner">
+        <div class="footer__container">
             <!-- Redes sociales. -->
-            <h2 class="redes_sociales">Redes Sociales</h2>
-            <ul class="footer__lista">
+            <h2 class="network__title">Redes Sociales</h2>
+            <ul class="footer__list">
                 <li class="footer__item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                 </li>
                 <li class="footer__item"><a href="https://www.yahoo.com/"><i class="fab fa-yahoo"></i></a></li>
-                <li class="footer__item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                </li>
+                <li class="footer__item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 <li class="footer__item"><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
         <hr />
         <p class="footer__text">Todos los derechos reservados - Tsutsumi Jose Antonio- Abril de 2021.</p>
     </footer>
-    </head>
+
 </body>
 
 </html>

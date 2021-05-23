@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/sobre-mi.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="favicons/manifest.json">
@@ -13,77 +13,85 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script defer src="index.js"></script>
     <title>Sobre-mi</title>
 </head>
 
-<body>
+<body class="body">
 
-    <!-- Cabecera de la pagina  -->
+    <!-- cabecera de la página -->
 
-    <nav class="nav__conteiner">
-        <div class="nav__conteiner__logo">
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="logo"> <img src="./img/antonio.jpg" class="nav-logo" alt=""></a>
+            <h1 class="nav-title">Tsutsumi, José Antonio.</h1>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu__visible">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./sobre-mi.html">Sobre-mi</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./galerias.html">Galerias</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./contactos.html">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <a class="logo__inicio" href="./index.html"><img class="logo" src="./img/antonio.jpg" alt="Logo"></a>
+    <!-- Pagina principal  de sobre-mi.html-->
+    <div class="container">
+        <div class="acercademi">
+            <h1 class="acercademi__titulo">Sobre-mi</h1>
+            <img class="acercademi__img" src="./img/ninja.png" alt="foto-mia" />
+            <p class="acercademi--text">Me encuentro en la búsqueda de
+                <strong class="resalto">nuevos desafíos como
+                    programador</strong>, en una empresa
+                que me permita desarrollar mis
+                potenciales actitudes
+                profesionales, en proyectos
+                innovadores y de impacto. Me
+                considero una persona
+                entusiasta, activa y en constante
+                aprendizaje.
+            </p>
+            <h2 class="acercademi__titulo2">SKILLS</h2>
+            <p class="acercademi__titulo2--text"> HTML - CSS - VSCode- Balsamiq </p>
+            <h2 class="acercademi__titulo3">Academias:</h2>
+            <p class="acercademi__titulo3--txt">Digital House- Udemy- Educacion IT- CoderHouse </p>
+            <br>
+
         </div>
-        <h1 class="title1"> Portfolio de TSUTSUMI, José Antonio</h1>
-        <div class="navbar">
-            <li class="navbar__item"><a class="item__acerca" href="#">SOBRE-MI</a></li>
-            <li class="navbar__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
-            <li class="navbar__item"><a class="item__galeria" href="./galerias.html">GALERIAS</a></li>
-            <li class="navbar__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
+    </div>
+    <!-- video presentacion  -->
+
+
+    <div class="video__contenedor">
+        <div class="video__presentacion">
+            <iframe class="presentacion" width="300" height="300" src="https://www.youtube.com/embed/KVakLLMBQxg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
-    </nav>
 
-    <!-- Pagina principal -->
-
-    <section class="acercademi">
-        <h1 class="acercademi__titulo">Sobre-mi</h1>
-        <img class="acercademi__img" src="./img/ninja.png" alt="foto-mia" />
-        <p class="acercademi--text">Me encuentro en la búsqueda de
-            <strong class="resalto">nuevos desafíos como
-                programador</strong>, en una empresa
-            que me permita desarrollar mis
-            potenciales actitudes
-            profesionales, en proyectos
-            innovadores y de impacto. Me
-            considero una persona
-            entusiasta, activa y en constante
-            aprendizaje.
-        </p>
-        <h2 class="acercademi__titulo2">SKILLS</h2>
-        <p class="acercademi__titulo2--text"> HTML - CSS - VSCode- Balsamiq </p>
-        <h2 class="acercademi__titulo3">Academias:</h2>
-        <p class="acercademi__titulo3--txt">Digital House- Udemy- Educacion IT- CoderHouse </p>
-        <br>
-
-        <!-- video presentacion  -->
-
-        <!-- <iframe width="674" height="320" src="https://www.youtube.com/embed/u1YQv5ayJzc" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe> -->
-        <iframe class="presentacion" width="500" height="500" src="https://www.youtube.com/embed/KVakLLMBQxg"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        <br>
+    </div>
+    <div class="volver">
         <a class="enlace" href="index.html">Volver a Inicio</a>
-    </section>
+    </div>
+    <hr>
 
-    <!-- Pie de la pagina  -->
+    <!-- Footer, pie de página -->
 
     <footer class="footer">
-        <div class="footer__conteiner">
-
+        <div class="footer__container">
             <!-- Redes sociales. -->
-
-            <h2 class="redes_sociales">Redes Sociales</h2>
-            <ul class="footer__lista">
+            <h2 class="network__title">Redes Sociales</h2>
+            <ul class="footer__list">
                 <li class="footer__item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                 </li>
                 <li class="footer__item"><a href="https://www.yahoo.com/"><i class="fab fa-yahoo"></i></a></li>
-                <li class="footer__item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                </li>
+                <li class="footer__item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 <li class="footer__item"><a href="https://www.github.com/"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>

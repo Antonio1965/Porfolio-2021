@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/contactos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="favicons/manifest.json">
@@ -13,35 +13,44 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script defer src="index.js"></script>
     <title>Pagina de contactos</title>
 
 </head>
 
 <body class="body">
 
-    <!-- Cabecera de la pagina  -->
+    <!-- cabecera de la página -->
 
-    <nav class="nav__conteiner">
-        <div class="nav__conteiner__logo">
-            <a class="item__inicio" href="index.html"><img class="logo" src="./img/antonio.jpg" alt="Logo"></a>
-        </div>
-        <h1 class="title1"> Portfolio de TSUTSUMI, José Antonio</h1>
-        <div class="navbar">
-            <li class="navbar__item"><a class="item__acerca" href="./sobre-mi.html">SOBRE-MI</a></li>
-            <li class="navbar__item"><a class="item__proyectos" href="./proyectos.html">PROYECTOS</a></li>
-            <li class="navbar__item"><a class="item__galeria" href="./galerias.html"">GALERIAS</a></li>
-            <li class=" navbar__item"><a class="item__contacto" href="./contactos.html">CONTACTOS</a></li>
-        </div>
-    </nav>
-    <section class="contactos">
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="logo"> <img src="./img/antonio.jpg" class="nav-logo" alt=""></a>
+            <h1 class="nav-title">Tsutsumi, José Antonio.</h1>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu nav-menu__visible">
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./sobre-mi.html">Sobre-mi</a></li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="./galerias.html">Galerias</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-menu-link nav-link " href="./contactos.html">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pagina principal de contactos.html -->
+
+    <main class="contactos">
         <h2 class="contactos__titulo">Contactos:</h2>
-
-        <!-- formulario  -->
-
         <form class="contactos__formulario" action="#">
             <fieldset class="contactos__control">
                 <legend class="contactos__leyenda">Información Personal</legend>
+
                 <!-- Radio boton -->
+
                 <input class="contactos__input" type="radio" required value="opcion1" name="genero" id="masculino"
                     checked>
                 <label class="contactos__label" for="masculino">Masculino</label>
@@ -52,8 +61,9 @@
                 <input class="contactos__input" type="radio" required value="opcion3" name="genero" id="otros">
                 <label class="contactos__label">Otros</label>
                 <br>
-                <br>
+
                 <!-- Input text -->
+
                 <label class="contactos__label" for="nombre">Nombre</label>
                 <input class="contactos__input" type="text" minlength="3" required name="nombre" id="nombre">
                 <br>
@@ -62,46 +72,53 @@
                 <input class="contactos__input" type="text" minlength="3" required name="apellido" id="apellido">
                 <br>
                 <br>
+
                 <!-- input email -->
-                <label class="contactos__label" for="nombre">Correo</label>
+
+                <label class="contactos__label-correo" for="nombre">Correo</label>
                 <input class="contactos__input" type="email" required placeholder="Ej. jose@gmail.com" name="email"
                     id="email">
                 <br>
                 <br>
                 <div id="terminos">
-                    " Desea recibir nuestro correo??"
+                    " Desea recibir nuestro correo? "
                     <input class="contactos__input" type="checkbox" name="acepta" value="1">
 
                 </div>
+
                 <!-- Cuadro de mensajes -->
+
                 <label class="contactos__label" for="mensaje" class="comentarios">Comentarios:</label>
                 <br>
-                <br>
+
                 <!-- textarea -->
+
                 <textarea class="contactos__textarea" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                 <br>
-                <br>
+
                 <!-- boton para enviar y resetear o borrar -->
+
                 <button class="contactos__boton" type="submit">Enviar</button>
                 <button class="contactos__boton" type="reset">Borrar</button>
             </fieldset>
         </form>
-        <br>
-        <a class="enlace" href="index.html">Volver a Inicio</a>
-    </section>>
+        <div class="volver">
+            <a class="enlace" href="index.html">Volver a Inicio</a>
+        </div>
+    </main>
+    <hr>
 
     <body>
 
-        <!-- Pie de la pagina  -->
+        <!-- Footer, pie de página -->
 
         <footer class="footer">
-            <div class="footer__conteiner">
+            <div class="footer__container">
                 <!-- Redes sociales. -->
-                <h2 class="redes_sociales">Redes Sociales</h2>
-                <ul class="footer__lista">
+                <h2 class="network__title">Redes Sociales</h2>
+                <ul class="footer__list">
                     <li class="footer__item"><a href="https://www.facebook.com/"><i
-                                class="fab fa-facebook-square"></i></a>
-                    </li>
+                                class="fab fa-facebook-square"></i></a></li>
                     <li class="footer__item"><a href="https://www.yahoo.com/"><i class="fab fa-yahoo"></i></a></li>
                     <li class="footer__item"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
                     </li>

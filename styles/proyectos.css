@@ -7,9 +7,10 @@
 .body {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #fdfdfd;
-  /* min-height: 100vh; */
-  /* position: sticky; */
+  /* background-color: #fdfdfd; */
+  background: linear-gradient(to left, #a6b4b4f8, #2c7573f8);
+  min-height: 100vh;
+  position: sticky;
 }
 .header {
   background-color: #0c7572;
@@ -87,132 +88,70 @@
   cursor: pointer;
 }
 
-/* Pagina principal */
+/* Pagina de proyectos */
 
-.main__container {
-  background: linear-gradient(to left top, #cedadaf8, #6aa7a4f8);
-  padding-top: 60px;
-}
-.container {
-  padding: 0;
+.proyectos__contenedor {
+  padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.inicio {
-  background-color: rgb(243, 164, 164);
-}
-.sobre-mi {
-  background-color: rgba(231, 190, 113, 0.726);
-}
-.proyectos {
-  background-color: red;
-}
-.galerias1 {
-  background-color: rgba(16, 194, 149, 0.616);
-}
-.contactos1 {
-  background-color: rgba(81, 30, 117, 0.596);
-}
-.home {
-  background-color: violet;
-}
-.container__item {
-  width: 400px;
-  height: 500%;
-}
-.container__item:hover {
-  background-color: black;
-}
-.inicio__titulo {
-  display: flex;
-  padding-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr;
+  gap: 10px;
   text-align: center;
+  color: whitesmoke;
 }
-.inicio__texto {
-  padding-top: 140px;
-  margin-left: 20px;
+.proyectos1,
+.proyectos2,
+.proyectos3,
+.proyectos4,
+.proyectos5,
+.proyectos6 {
+  border-radius: 20px;
+}
+.proyec__video,
+.proyec__img {
+  width: 600px;
+  border-radius: 10px;
 }
 
-/* --Animaciones -- */
-.container__title {
+/*  transformaciones de imagenes y videos. */
+
+.proyec__video:hover,
+.proyec__img:hover {
+  transition: 3s;
+  transform: skew(5deg);
+  border: whitesmoke 2px solid;
+}
+
+/* ------------------------------------------- */
+.proyec__title {
+  background-color: rgba(169, 169, 169, 0.527);
+  color: rgba(250, 217, 217, 0.5);
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 10px;
+}
+.proyec__descr {
+  padding: 10px;
+}
+.proyec__text {
+  padding: 20px 20px;
+}
+.proyecto-a-ejecutar {
   padding-top: 10px;
-  margin-left: 20px;
-  animation-duration: 3s;
-  animation-name: resalto;
-  animation-iteration-count: infinite;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-@keyframes resalto {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* ------------------------------------ */
-
-.container__title a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-.container__text {
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
   color: whitesmoke;
 }
-
-/* transformaciones de imagenes */
-
-.imagen-2:hover {
-  cursor: pointer;
-  transition: 5s;
-  opacity: 0.5;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.05, 0.05, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
+.enlace {
+  color: tomato;
 }
-.imagen-3:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 0.75;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.5, 0.5, 0.5) rotateX(180deg)
-    rotateY(0deg) rotateZ(0deg) skew(10deg, 10deg);
-  transform-style: preserve-3d;
-}
-.imagen-4:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 1;
-  transform: translate3d(40px, -40px, 0px) scale3d(0.6, 0.3, 0.8) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-.imagen-5:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 0.7;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.85, 0.85, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-.imagen-6:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 0.3) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
+.volver {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
 }
 
 /* Footer de la pagina */
@@ -299,5 +238,13 @@
   }
   .contenedor {
     padding: 0;
+  }
+  .proyectos__contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-a-ejecutar {
+    display: flex;
+    justify-content: center;
   }
 }

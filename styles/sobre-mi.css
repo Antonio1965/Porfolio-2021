@@ -7,9 +7,10 @@
 .body {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #fdfdfd;
-  /* min-height: 100vh; */
-  /* position: sticky; */
+  /* background-color: #fdfdfd; */
+  background: linear-gradient(to left, #a6b4b4f8, #2c7573f8);
+  min-height: 100vh;
+  position: sticky;
 }
 .header {
   background-color: #0c7572;
@@ -87,132 +88,74 @@
   cursor: pointer;
 }
 
-/* Pagina principal */
-
-.main__container {
-  background: linear-gradient(to left top, #cedadaf8, #6aa7a4f8);
-  padding-top: 60px;
-}
+/* Pagina de sobre-mi */
 .container {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* background: linear-gradient(to left, #a6b4b4f8, #2c7573f8); */
+  padding-top: 80px;
 }
-.inicio {
-  background-color: rgb(243, 164, 164);
+.acercademi {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 2em;
 }
-.sobre-mi {
-  background-color: rgba(231, 190, 113, 0.726);
+.acercademi__img {
+  max-width: 200px;
+  border-radius: 50px;
+  border: whitesmoke 1px solid;
+  margin: auto;
+  display: block;
 }
-.proyectos {
-  background-color: red;
+.acercademi__titulo,
+.acercademi__titulo2,
+.acercademi__titulo3 {
+  font-size: 25px;
+  text-align: center;
+  padding: 15px 10px;
 }
-.galerias1 {
-  background-color: rgba(16, 194, 149, 0.616);
-}
-.contactos1 {
-  background-color: rgba(81, 30, 117, 0.596);
-}
-.home {
-  background-color: violet;
-}
-.container__item {
-  width: 400px;
-  height: 500%;
-}
-.container__item:hover {
-  background-color: black;
-}
-.inicio__titulo {
-  display: flex;
-  padding-top: 200px;
+.acercademi--text,
+.acercademi__titulo2--text,
+.acercademi__titulo3--text {
+  font-size: 20px;
+  padding: 20px;
   text-align: center;
 }
-.inicio__texto {
-  padding-top: 140px;
-  margin-left: 20px;
+.presentacion {
+  border-radius: 20px;
 }
 
-/* --Animaciones -- */
-.container__title {
-  padding-top: 10px;
-  margin-left: 20px;
-  animation-duration: 3s;
-  animation-name: resalto;
-  animation-iteration-count: infinite;
-  text-transform: uppercase;
-  text-decoration: none;
+/* Responsive  de video. */
+
+.video__contenedor {
+  /* background-color: brown; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 1200px;
 }
-@keyframes resalto {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.video__presentacion {
+  height: 0;
+  padding-bottom: 20.25%;
+  padding-left: 25%;
+  position: relative;
+}
+.presentacion {
+  position: absolute;
+  width: 50%;
+  height: 100%;
 }
 
-/* ------------------------------------ */
+/* --------------------------------- */
 
-.container__title a {
-  color: whitesmoke;
-  text-decoration: none;
+.resalto {
+  color: tomato;
 }
-.container__text {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.enlace {
+  color: tomato;
+}
+.volver {
+  margin: 10px;
   text-align: center;
-  color: whitesmoke;
-}
-
-/* transformaciones de imagenes */
-
-.imagen-2:hover {
-  cursor: pointer;
-  transition: 5s;
-  opacity: 0.5;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.05, 0.05, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-.imagen-3:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 0.75;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.5, 0.5, 0.5) rotateX(180deg)
-    rotateY(0deg) rotateZ(0deg) skew(10deg, 10deg);
-  transform-style: preserve-3d;
-}
-.imagen-4:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 1;
-  transform: translate3d(40px, -40px, 0px) scale3d(0.6, 0.3, 0.8) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-.imagen-5:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 0.7;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.85, 0.85, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-.imagen-6:hover {
-  cursor: pointer;
-  transition: 3s;
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 0.3) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
 }
 
 /* Footer de la pagina */
@@ -254,7 +197,7 @@
 
 @media (max-width: 768px) {
   body {
-    background-color: turquoise;
+    /* background-color: turquoise; */
     padding-top: 0px;
   }
   .header {
